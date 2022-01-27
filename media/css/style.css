@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #079992;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#site {
+  width: 850px;
+  margin: auto;
+  border: 1px solid #030;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+  "header header"
+  "nav article"
+  "footer footer";
+}
+
+header{
+  grid-area: header;
+  background-color: #60a3bc;
+  text-align: center;
+}
+
+nav{
+  grid-area: nav;
+  background-color: #82ccdd;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  list-style-type: none;
+  padding: 20px;
+  margin: auto;
+}
+
+ul li:hover{
+  background-color: #930;
+}
+
+ul li a{
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+article{
+  grid-area: article;
+  background-color: #fff;
+  padding: 15px;
+}
+
+article h1{
+  text-align: center;
+}
+
+.box{
+  width: 75%;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+input[type='text'], input[type='password']{
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+input[type='submit']{
+  width: 80%;
+  font-size: 30px;
+  padding: 15px;
+  background-color: #f90;
+  border: none;
+  cursor: pointer;
+}
+
+input[type='submit']:hover{
+  background-color: #f60;
+}
+
+.red{
+  color:red;
+}
+
+footer{
+  grid-area: footer;
+  background-color: #3c6382;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  #site {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "article"
+    "footer";
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  article{
+    text-align: center;
+  }
+}
+
