@@ -48,8 +48,8 @@
 
   </div>
 
-<script src="<?= MEDIA; ?>jquery/jquery-3.6.0.min.js"></script>
-<script src="<?= MEDIA; ?>jquery/controle-formulaire.js"></script>
+<script src="<?= MEDIA; ?>/jquery/jquery-3.6.0.min.js"></script>
+<script src="<?= MEDIA; ?>/jquery/controle-formulaire.js"></script>
 
 </body>
 </html>
